@@ -17,6 +17,17 @@ class FormContato extends Component {
 
     const { name, telphone } = this.state;
 
+    this.props.onCreteContato({
+      name,
+      telphone,
+      id: generateUID(),
+    });
+
+    this.setState({
+      name: "",
+      telphone: "",
+    });
+
     console.log("Novo contato: ", { name, telphone });
   };
 

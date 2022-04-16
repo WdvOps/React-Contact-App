@@ -27,7 +27,11 @@ class App extends Component {
       },
     ],
   };
-
+  createContato = (contato) => {
+    this.setState((currentState) => ({
+      contatos: currentState.contatos.concat([contato]),
+    }));
+  };
   removeContato = (contato) => {
     this.setState((currentState) => ({
       contatos: currentState.contatos.filter((ctt) => {
@@ -39,7 +43,7 @@ class App extends Component {
     return (
       <div>
         <h1>Contatos</h1>
-        <FormContato />
+        <FormContato onCreteContato={this.createContato} />
         <ListaContatos
           contatos={this.state.contatos}
           onDeleteContato={this.removeContato}
