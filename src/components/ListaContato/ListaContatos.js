@@ -9,7 +9,7 @@ class ListaContatos extends Component {
         {this.props.contatos.map((contato) => (
           <li key={contato.id}>
             <h4>{contato.name}</h4>
-            <p>{contato.telephone}</p>
+            <p>{contato.telphone}</p>
             <button onClick={() => this.props.onDeleteContato(contato)}>
               Delete
             </button>

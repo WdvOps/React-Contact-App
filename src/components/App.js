@@ -8,22 +8,22 @@ class App extends Component {
       {
         id: "0",
         name: "Mari",
-        telephone: "31988516745",
+        telphone: "31988516745",
       },
       {
         id: "1",
         name: "Mãe",
-        telephone: "31988122881",
+        telphone: "31988122881",
       },
       {
         id: "23",
         name: "Lucimar",
-        telephone: "31987581647",
+        telphone: "31987581647",
       },
       {
         id: "3",
         name: "Luciana Martins",
-        telephone: "11981927835",
+        telphone: "11981927835",
       },
     ],
   };
