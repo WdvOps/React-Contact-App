@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Fix:
+
+Durante a implementação do botão de deleção de contatos observei um erro de imcompatibilidade com versão atualizado do React (Leia sobre isso em https://github.com/facebook/react/blob/main/CHANGELOG.md)
+
+- Deixei um comentário no arquivo <code>Index.js</code> apontando as mudanças que foram feitas no arquivo em questão
+
+## Fix (eng):
+
+During the implementation of the delete contacts button I noticed an incompatibility error with the updated version of React (Read about it at https://github.com/facebook/react/blob/main/CHANGELOG.md)
+
+- I left a comment in the file <code>Index.js</code> pointing out the changes that were made to the file in question
