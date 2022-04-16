@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import ListaContatos from "./ListaContatos";
+import FormContato from "./FormContato";
+import ListaContatos from "./ListaContato/ListaContatos";
 
 class App extends Component {
   state = {
-    contacts: [
+    contatos: [
       {
         id: "0",
         name: "Mari",
@@ -26,11 +27,23 @@ class App extends Component {
       },
     ],
   };
+
+  removeContato = (contato) => {
+    this.setState((currentState) => ({
+      contatos: currentState.contatos.filter((ctt) => {
+        return ctt.id !== contato.id;
+      }),
+    }));
+  };
   render() {
     return (
       <div>
         <h1>Contatos</h1>
-        <ListaContatos contacts={this.state.contacts} />
+        <FormContato />
+        <ListaContatos
+          contatos={this.state.contatos}
+          onDeleteContato={this.removeContato}
+        />
       </div>
     );
   }
